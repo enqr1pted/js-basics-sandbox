@@ -1,7 +1,6 @@
-let programmingLanguageName = prompt("Какое официальное название JavaScript", "");
+let login = prompt('Введите ваш логин', '');
 
-if (programmingLanguageName === "ECMAScript") {
-	alert("Верно!");
-} else {
-	alert("Не знаете? ECMAScript!");
-}
+let message = (login == 'Сотрудник') ? 'Привет!' :
+(login == 'Директор') ? 'Здравствуйте' : 
+(login == '') ? 'Введите логин!!!' : 'Некорректный логин';
+alert(message);
