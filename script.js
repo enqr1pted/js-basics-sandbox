@@ -1,6 +1,7 @@
-let userName;
-userName = prompt("What's your name?");
-alert(`Welcome, ${userName}!`);
+let programmingLanguageName = prompt("Какое официальное название JavaScript", "");
 
-let testConfirm = confirm("English or Spanish?");
-alert(`Вы выбрали ответ - ${testConfirm}!`);
+if (programmingLanguageName === "ECMAScript") {
+	alert("Верно!");
+} else {
+	alert("Не знаете? ECMAScript!");
+}
