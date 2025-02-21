@@ -1,16 +1,13 @@
-let login = prompt('Введите ваш логин:', '');
+let num1 = 10,
+	num2 = 20,
+	result;
 
-if (login === 'admin') {
-	let password = prompt('Введите ваш пароль:', '');
-	if (password === '1234') {
-		alert('Здравствуйте!');
-	} else if (password === '' || password === null) {
-		alert('Отменено.');
-	} else {
-		alert('Неверный пароль!');
+	if (result === null || result === undefined) {
+		if (num1 !==null && num1 !== undefined) {
+			result = num1;
+		} else {
+			result = num2;
+		}
 	}
-} else if (login === '' || login === null) {
-	alert('Отменено');
-} else {
-	alert('Я вас не знаю!');
-}
+
+	
